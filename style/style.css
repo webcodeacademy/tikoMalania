@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Arvo', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+   
+   /* background-image: linear-gradient(to right, rgb(224, 49, 49),
+     rgb(62, 62, 230));*/
+    background-image: url(../img/astrology.jpg);
+     background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--darkcolor);
+}
+@media only screen and (max-width: 800px) {
+     body {
+      background-color: #79beef
+    }
+  
+}
+   
+  p{
+    color: var(--darkcolor);
+  }
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+:root{
+    --darkcolor: #000000;
+    --primarycolor: #e2e2e2;
+
+}
+
+.image{
+    cursor: pointer;
+    display: block;
+}
+
+header .ad{
+    width: 100%;
+   height: 150px;
+    overflow: hidden;
+}
+header nav{
+    width: 100%;
+    padding: 30px;
+    position: sticky;
+    top: 0px;
+   /* background-color: #f0f5f2;*/
+  
+
+}
+header ul{
+    /*padding-left: 40px;*/
+    width: 600px;
+/*background-color: #000000;*/
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header ul a{
+    padding: 5px 10px;
+    font-size: 22px;
+    color: #eae7ee;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    padding: 5px 10px;
+    position: relative;
+    text-shadow: 0 5px #4f0ee9;
+}
+header ul a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #eae7ee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+
+}
+header ul a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #eae7ee;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 1s;
+
+}
+header ul a:hover:after{
+    width: 100%;
+}
+
+header ul a:hover:before{
+    width: 100%;
+
+}
+.fa-toggle-off-icon{
+    font-size: 50px;
+    cursor: pointer;
+    color: #afd1d5;
+}
+
+.social{
+    width: 100px;
+    height: 200px;
+   /* background-color: #36c08b;*/
+   position: fixed;
+   top: 300px;
+   right: 0;
+   cursor: pointer;
+
+}
+.social .socialitem{ 
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    background-color: #e3e3f1;
+    animation: feriscvla  5s 2s infinite;
+    transition: 1s;
+    
+}
+@keyframes feriscvla{
+   from{background-color: #3dd6eb;}
+    to{background-color: #1709d3;}
+}
+
+.social .socialitem a{
+    display: block;
+    width: 100px;
+    height: 100%;
+    
+}
+.social .socialitem a img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider{
+   width: 100%;
+   height: 100%;
+    background-color: #c2edf3;  
+}
+
+main .imagedesc{
+    width: 1300px;
+    height: 500px;
+    margin: 50px auto;
+    background-image: url(../img/მიწა.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    
+
+}
+.imagedesc img{
+    width: 500px;
+    text-align: center;
+    
+}
+.imagedesc p{
+    font-weight: bolder;
+    color: rgb(29, 31, 30);
+    font-size: larger;
+}
+.imagedesc h2{
+    color: rgb(29, 31, 30);
+}
+main .imagedesc1{
+    width: 1300px;
+    height: 500px;
+    margin: 50px auto;
+    background-image: url(../img/ცეცხლი.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+.imagedesc1 p{
+    font-weight:500px;
+    color: rgb(227, 19, 29);
+    font-size: larger;
+}
+.imagedesc1 h2{
+    color: #e21111;
+}
+.imagedesc2 {
+    width: 1300px;
+    height: 500px;
+    margin: 50px auto;
+    background-image: url(../img/ჰაერი.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+
+}
+.imagedesc2 p{
+    font-weight: bolder;
+    color: rgb(206, 100, 19); 
+    font-size: larger;
+}
+.imagedesc2 h2{
+    color:rgb(206, 100, 19);
+}
+.imagedesc3{
+    width: 1300px;
+    height: 500px;
+    margin: 50px auto;
+    background-image: url(../img/ჰაერი.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+.imagedesc3 p{
+    font-weight: bolder;
+    color: rgb(237, 19, 244); 
+    font-size: larger;
+}
+.imagedesc3 h2{
+    color: rgb(237, 19, 244);
+}
+
+main .imagedesc4{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/ვერძი.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    
+
+}
+.imagedesc4 img{
+    width: 100%;
+    text-align: center;
+    
+}
+
+main .imagedesc5{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/კუროასტროლოგია.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+.imagedesc6 {
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/მარჩბივი-ტყუპები-ასტროლოგია.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+
+}
+
+
+.imagedesc7{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/კირჩხიბი.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+
+.imagedesc8{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/ლომი-ასტროლოგია.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+
+.imagedesc9{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/ქალწული-ასტროლოგია.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+
+.imagedesc10{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/სასწორი-ასტროლოგია.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+
+.imagedesc11{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/ღრიანკალი-ასტროლოგია.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+
+.imagedesc12{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/მშვილდოსანი-ასტროლოგია.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+
+.imagedesc13{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/თხის.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+
+.imagedesc14{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/მერწყული.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+
+.imagedesc15{
+    width: 1300px;
+    height: 800px;
+    margin: 50px auto;
+    background-image: url(../img/თევზები-ასტროლოგია.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+.stiqiebi h2{
+    color: #dadedb;
+    font-weight: bold;
+}
+.stiqiebi p{
+    color: #edd119;
+    font-weight: bolder;
+    font-size: larger;
+    display: none;
+}
+.stiqiebi:hover p{
+    display: block;
+    cursor: pointer;
+}
+
+.shekveta{
+    
+    position: absolute;
+left: 1200px;
+top: 400px;
+/*border-bottom: 3px solid #FFFFFF;*/
+padding: 20px;
+}
+.shekveta input{
+    width: 750px;
+    height: 70px;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: large;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid #FFFFFF;
+
+}
+.kontakti textarea{
+    box-sizing: border-box;
+width: 750px;
+height: 150px;
+background: rgba(255, 255, 255, 0.5);
+border-bottom: 3px solid #FFFFFF;
+border-radius: 10px;
+}
+.kontakti{
+    width: 500px;
+    margin: 50px auto;
+    margin-right: 1300px;
+    margin-top: 250px;
+}
+.kontakti input{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    background-color: #d3d3dd;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: #3711dd;
+    border-bottom: 1px solid #1024db;
+}
+.kontakti input{
+    font-size: 18px;
+    font-weight: 26px;
+    color: #160202;
+    font-style: normal;
+}
+
+.kontakti input[type ="submit"]{
+    background: #3711dd;
+    border-bottom: 3px solid #000000;
+    border-radius: 10px;
+    font-style: bold;
+font-weight: bold;
+font-size: 20px;
+line-height: 28px;
+}
+.kontakti textarea{
+    border: 1px solid #3711dd;
+    color: #120fec;
+    font-size: 18px;
+    font-weight: 26px;
+    font-style: normal;
+    resize: none;
+    border-radius: 10px;
+    background-color: #d3d3dd;
+
+}
+main  li div{
+background-color: #eae3f7;
+width: 750px;
+height: 394px;
+left: 900px;
+margin-top: 150px;
+padding: 20px auto;
+border-radius: 20px;
+}
+main ul li .suscess{
+   position: absolute;
+width: 654px;
+height: 255px;
+left: 50px;
+top: 150px;
+font-family: 'Sylfaen';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 47px;
+text-align: center;
+color: #4618e9;  
+}
+.articles1{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3dd6eb;
+}
+.flex1{
+    width: 400px;
+    padding: 20px;
+    background-color: #c2edf3;
+    margin-bottom: 40px;
+
+}
+.containerimage{
+      width: 100%;
+      height: 280px;
+        margin: 20px 0;
+        overflow: hidden;
+    }
+ .containerimage img{
+    width: 100%;
+ }
+
+ .gallery{
+    width: 100%;
+ }
+ @media only screen and (max-width: 600px) {
+    body .gallery {
+      background-color: rgb(139, 208, 231);
+    }
+  }
+  
+  
+body .gallery{
+    width: 100%;
+   height: 150px;
+    overflow: hidden;
+}
+body .gallery nav{
+    width: 100%;
+    padding: 30px;
+    position: sticky;
+    top: 0px;
+   /* background-color: #f0f5f2;*/
+  
+
+}
+body.gallery ul{
+    /*padding-left: 40px;*/
+    width: 600px;
+/*background-color: #000000;*/
+    display: flex;
+    justify-content: space-between;
+
+}
+
+body .gallery ul a{
+    padding: 5px 10px;
+    font-size: 22px;
+    color: #eae7ee;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    padding: 5px 10px;
+    position: relative;
+    text-shadow: 0 5px #4f0ee9;
+}
+body .gallery ul a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #eae7ee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+
+}
+body .gallery ul a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #eae7ee;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 1s;
+
+}
+body .gallery ul a:hover:after{
+    width: 100%;
+}
+
+body 
+.gallery ul a:hover:before{
+    width: 100%;
+
+}
+.item h2{
+    color: #e81010;
+    font-weight: bolder;
+
+}
+
+.footer{
+    width: 100%;
+   height: 100px;
+    overflow: hidden;
+    padding: 30px;
+    top: 0px;
+    padding: 5px 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 5px #8d66ea;
+}
+footer{
+    background-color: #3dd6eb;
+    width: 400px;
+    margin: 80px;
+
+}
+
+
+
+
+
+       
+    
+
+
+
+    
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
